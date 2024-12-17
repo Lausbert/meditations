@@ -143,7 +143,7 @@ def text_to_speech(topic, segments: List[Dict[str, Union[str, float]]]):
     final_audio = np.concatenate(audio_segments)
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_filename = f"meditation_{topic}_{timestamp}.wav"
+    output_filename = f"meditation_{timestamp}_{topic}.wav"
     sf.write(output_filename, final_audio, sampling_rate)
     
     return final_audio, output_filename
