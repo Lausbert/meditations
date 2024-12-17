@@ -120,7 +120,8 @@ def text_to_speech(topic, segments: List[Dict[str, Union[str, float]]]):
     tokenizer = AutoTokenizer.from_pretrained("parler-tts/parler-tts-mini-multilingual-v1.1")
     description_tokenizer = AutoTokenizer.from_pretrained(model.config.text_encoder._name_or_path)
     
-    description = "Nicole's german voice is flat, seductive, slow, soft and meditative without any emotions. Make a breath after each sentence. Use a very close recording that almost has no background noise."
+    #description = "Nicole's german voice is flat, seductive, slow, soft and meditative without any emotions. Make a breath after each sentence. Use a very close recording that almost has no background noise."
+    description = "Nicole's german voice is very angry and strict. Make a breath after each sentence. Use a very close recording that almost has no background noise."
     input_ids = description_tokenizer(description, return_tensors="pt").input_ids.to(device)
     
     audio_segments = []
