@@ -34,6 +34,7 @@ def generate_meditation_ssml(topic: str) -> str:
     - Be around 6-8 sentences long
     - Include appropriate pauses (using <break> tags) between sentences
     - Use calming, mindful language
+    - Do not use abbrevations or anglicisms
     - Follow this SSML structure:
     
     <speak>
