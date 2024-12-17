@@ -1,0 +1,10 @@
+# source .venv/bin/activate
+# python3 -m pip install --upgrade pip
+
+#python3 -m pip install transformer
+#python3 -m pip install soundfile
+#python3 -m pip install --pre torch torchvision
+#python3 -m pip install git+https://github.com/huggingface/parler-tts.git
+
+# python3 -m pip freeze > requirements.txt
+# python3 -m pip install -r requirements.txt
