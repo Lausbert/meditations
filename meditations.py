@@ -163,12 +163,13 @@ def generate_meditation(topic: str):
     
     # Convert SSML to JSON format
     meditation_segments = ssml_to_json(ssml_text)
+    print(meditation_segments)
     
     # Generate audio
-    audio, filename = text_to_speech(topic, meditation_segments)
+    # audio, filename = text_to_speech(topic, meditation_segments)
     
-    print(f"Meditation generated and saved as: {filename}")
-    return audio, filename
+    # print(f"Meditation generated and saved as: {filename}")
+    # return audio, filename
 
 # python meditations.py "Anstrengende Programmierungs-Aufgaben werden gemeistert. Alle Probleme gelöst."
 if __name__ == "__main__":
