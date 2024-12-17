@@ -170,6 +170,7 @@ def generate_meditation(topic: str):
     print(f"Meditation generated and saved as: {filename}")
     return audio, filename
 
+# python meditations.py "Anstrengende Programmierungs-Aufgaben werden gemeistert. Alle Probleme gelöst."
 if __name__ == "__main__":
     import argparse
     
